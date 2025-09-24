@@ -36,6 +36,8 @@ build/
 *.iml
 *.ipr
 out/
+.idea/
+
 
 ### NetBeans ###/nbproject/private/
 /nbbuild/
