@@ -3,7 +3,7 @@ package entity;
 public class ClothingProduct extends Product {
     private  String  size;
 
-    public ClothingProduct(Long id, String name, Integer price, String size) {
+    public ClothingProduct(Long id, String name, Double price, String size) {
         super(id, name, price);
         this.size = size;
     }
@@ -23,6 +23,9 @@ public class ClothingProduct extends Product {
     @Override
     public String toString() {
         return "ClothingProduct{" +
+                "id=" + getId() +
+                ", name='" + getName() + '\'' +
+                ", price=" + getPrice() +
                 "size='" + size + '\'' +
                 '}';
     }

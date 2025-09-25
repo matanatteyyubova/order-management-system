@@ -3,7 +3,7 @@ package entity;
 public class ElectronicsProduct  extends  Product{
     private Integer warrantyPeriod;
 
-    public ElectronicsProduct(Long id, String name, Integer price, Integer warrantyPeriod) {
+    public ElectronicsProduct(Long id, String name, Double price, Integer warrantyPeriod) {
         super(id, name, price);
         this.warrantyPeriod = warrantyPeriod;
     }
@@ -23,7 +23,11 @@ public class ElectronicsProduct  extends  Product{
     @Override
     public String toString() {
         return "ElectronicsProduct{" +
-                "warrantyPeriod=" + warrantyPeriod +
+                "id=" + getId() +
+                ", name='" + getName() + '\'' +
+                ", price=" + getPrice() +
+                ", warrantyPeriod=" + warrantyPeriod +
                 '}';
     }
+
 }
